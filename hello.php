@@ -4,6 +4,8 @@
         <title>My Letterbox</title>
     </head>
     <body>
+        The server is running on <?php echo php_uname("s"); ?>. <br />
+
         This page has been visited <?php
           $db = new PDO("sqlite:" . __DIR__ . "/db.sqlite");
           $db->exec("CREATE TABLE IF NOT EXISTS visits (
